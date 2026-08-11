@@ -4,7 +4,6 @@ import { useScrollPosition } from './hooks/useScrollPosition';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
-import { Gallery } from './components/Gallery';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
@@ -23,7 +22,6 @@ export const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Gallery />
         <Skills />
         <Projects />
         <Contact />

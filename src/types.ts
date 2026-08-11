@@ -26,11 +26,3 @@ export interface Stat {
   value: string;
   sublabel?: string;
 }
-
-export interface GalleryItem {
-  id: string;
-  title: string;
-  location: string;
-  imageUrl: string;
-  aspectRatio?: 'square' | 'portrait' | 'wide';
-}

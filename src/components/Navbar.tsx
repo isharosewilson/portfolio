@@ -15,7 +15,6 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Gallery', href: '#gallery' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
@@ -24,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'gallery', 'projects', 'skills', 'contact'];
+      const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
