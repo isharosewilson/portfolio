@@ -1,4 +1,4 @@
-import type { Project, Skill, Stat } from '../types';
+import type { Project, Skill, Stat, GalleryItem } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Isha Rose Wilson",
@@ -37,6 +37,44 @@ export const STATS: Stat[] = [
     label: "Stack",
     value: "React & TS",
     sublabel: "Modern Web Stack"
+  }
+];
+
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: "gallery-1",
+    title: "Campus Days & Outings",
+    location: "GEC Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-1.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-2",
+    title: "Engineering Moments",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-2.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-3",
+    title: "College Life",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-3.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-4",
+    title: "Peer Community & Friends",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-4.jpg",
+    aspectRatio: "wide"
+  },
+  {
+    id: "gallery-5",
+    title: "Campus Environment",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-5.jpg",
+    aspectRatio: "square"
   }
 ];
 
