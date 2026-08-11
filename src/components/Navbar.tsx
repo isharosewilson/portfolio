@@ -15,6 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
 
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Gallery', href: '#gallery' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
@@ -23,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'projects', 'skills', 'contact'];
+      const sections = ['hero', 'about', 'gallery', 'projects', 'skills', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
@@ -111,12 +112,12 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
 
           {/* Action Buttons */}
           <div className="flex items-center gap-3">
-            {/* Dark Mode Switcher */}
+            {/* Day / Night Mode Switcher */}
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-full text-[#1D1D1F] dark:text-[#F5F5F7] bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-200"
-              aria-label="Toggle Dark Mode"
-              title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+              className="p-2 rounded-full text-[#1D1D1F] dark:text-[#F5F5F7] bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 transition-all duration-200 flex items-center gap-2 px-3 text-xs font-medium"
+              aria-label="Toggle Theme"
+              title={isDark ? "Switch to Day Mode" : "Switch to Night Mode"}
             >
               <AnimatePresence mode="wait" initial={false}>
                 <motion.div
@@ -129,6 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
                   {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-[#1D1D1F]" />}
                 </motion.div>
               </AnimatePresence>
+              <span>{isDark ? 'Day' : 'Night'}</span>
             </button>
 
             {/* GitHub Fast Link */}
@@ -148,10 +150,11 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
         <div className="flex md:hidden items-center gap-3">
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-black/5 dark:bg-white/10 text-[#1D1D1F] dark:text-[#F5F5F7]"
-            aria-label="Toggle Dark Mode"
+            className="p-2.5 rounded-full bg-black/5 dark:bg-white/10 text-[#1D1D1F] dark:text-[#F5F5F7] flex items-center gap-1.5 text-xs font-medium"
+            aria-label="Toggle Theme"
           >
             {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-[#1D1D1F]" />}
+            <span>{isDark ? 'Day' : 'Night'}</span>
           </button>
 
           <button
@@ -188,11 +191,19 @@ export const Navbar: React.FC<NavbarProps> = ({ isDark, toggleDarkMode, isScroll
               ))}
 
               <div className="pt-4 flex flex-col gap-3">
+                <button
+                  onClick={toggleDarkMode}
+                  className="w-full text-center text-sm font-medium py-2.5 rounded-full bg-black/5 dark:bg-white/10 text-[#1D1D1F] dark:text-[#F5F5F7] flex items-center justify-center gap-2"
+                >
+                  {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-[#1D1D1F]" />}
+                  <span>Switch to {isDark ? 'Day (Light)' : 'Night (Dark)'} Mode</span>
+                </button>
+
                 <a
                   href={PERSONAL_INFO.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full text-center text-sm font-medium py-2.5 rounded-full bg-[#0071E3] text-white hover:bg-[#0071E3]/90 transition-colors"
+                  className="w-full text-center text-sm font-medium py-2.5 rounded-full bg-[#1D1D1F] dark:bg-white text-white dark:text-[#1D1D1F] transition-colors"
                 >
                   Visit GitHub Profile
                 </a>

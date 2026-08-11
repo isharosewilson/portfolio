@@ -1,4 +1,4 @@
-import type { Project, Skill, Stat } from '../types';
+import type { Project, Skill, Stat, GalleryItem } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Isha Rose Wilson",
@@ -37,6 +37,107 @@ export const STATS: Stat[] = [
     label: "Stack",
     value: "React & TS",
     sublabel: "Modern Web Stack"
+  }
+];
+
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: "gallery-1",
+    title: "Campus Days & Outings",
+    location: "GEC Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-1.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-2",
+    title: "Engineering Moments",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-2.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-3",
+    title: "College Life",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-3.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-4",
+    title: "Peer Community & Friends",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-4.jpg",
+    aspectRatio: "wide"
+  },
+  {
+    id: "gallery-5",
+    title: "Campus Environment",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-5.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-6",
+    title: "College Events & Celebrations",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-6.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-7",
+    title: "Campus Vibes",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-7.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-8",
+    title: "Outing & Memories",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-8.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-9",
+    title: "Friendship & Community",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-9.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-10",
+    title: "Campus Gatherings",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-10.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-11",
+    title: "Festivals & Celebrations",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-11.jpg",
+    aspectRatio: "wide"
+  },
+  {
+    id: "gallery-12",
+    title: "Group Portrait",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-12.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-13",
+    title: "Nettara Trip",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-13.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-14",
+    title: "Nettara Moments",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-14.jpg",
+    aspectRatio: "square"
   }
 ];
 
