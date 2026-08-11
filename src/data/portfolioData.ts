@@ -1,4 +1,4 @@
-import type { Project, Skill, Stat, GalleryItem } from '../types';
+import type { Project, Skill, Stat } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Isha Rose Wilson",
@@ -13,8 +13,7 @@ export const PERSONAL_INFO = {
   email: "isharosewilson@gmail.com",
   github: "https://github.com/isharosewilson",
   linkedin: "https://www.linkedin.com/in/isha-rose-wilson-895857351/",
-  resumeUrl: "#",
-  avatarUrl: "/avatar.jpg"
+  resumeUrl: "#"
 };
 
 export const STATS: Stat[] = [
@@ -37,144 +36,6 @@ export const STATS: Stat[] = [
     label: "Stack",
     value: "React & TS",
     sublabel: "Modern Web Stack"
-  }
-];
-
-export const GALLERY_ITEMS: GalleryItem[] = [
-  {
-    id: "gallery-1",
-    title: "Ooty Trip Moments",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-1.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-2",
-    title: "Ooty Exploration",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-2.jpg",
-    aspectRatio: "square"
-  },
-  {
-    id: "gallery-3",
-    title: "Ooty Campus Friends",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-3.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-4",
-    title: "Ooty Scenic View",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-4.jpg",
-    aspectRatio: "wide"
-  },
-  {
-    id: "gallery-5",
-    title: "Ooty Outing Snap",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-5.jpg",
-    aspectRatio: "square"
-  },
-  {
-    id: "gallery-6",
-    title: "Ooty Trip Memories",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-6.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-7",
-    title: "Ooty Group Gathering",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-7.jpg",
-    aspectRatio: "square"
-  },
-  {
-    id: "gallery-8",
-    title: "College Fest & Trip",
-    location: "College Trip 2026",
-    imageUrl: "/gallery/gallery-8.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-9",
-    title: "Campus Celebrations",
-    location: "College Trip 2026",
-    imageUrl: "/gallery/gallery-9.jpg",
-    aspectRatio: "square"
-  },
-  {
-    id: "gallery-10",
-    title: "Friends & Community",
-    location: "College Trip 2026",
-    imageUrl: "/gallery/gallery-10.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-11",
-    title: "Campus Memories",
-    location: "College Trip 2026",
-    imageUrl: "/gallery/gallery-11.jpg",
-    aspectRatio: "wide"
-  },
-  {
-    id: "gallery-12",
-    title: "Class Group Portrait",
-    location: "College Trip 2026",
-    imageUrl: "/gallery/gallery-12.jpg",
-    aspectRatio: "square"
-  },
-  {
-    id: "gallery-13",
-    title: "Nettara Trip Exploration",
-    location: "Nettara Trip",
-    imageUrl: "/gallery/gallery-13.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-14",
-    title: "Nettara Outing Snap",
-    location: "Nettara Trip",
-    imageUrl: "/gallery/gallery-14.jpg",
-    aspectRatio: "square"
-  },
-  {
-    id: "gallery-15",
-    title: "Nettara Landscape",
-    location: "Nettara Trip",
-    imageUrl: "/gallery/gallery-15.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-16",
-    title: "Nettara Scenic View",
-    location: "Nettara Trip",
-    imageUrl: "/gallery/gallery-16.jpg",
-    aspectRatio: "square"
-  },
-  {
-    id: "gallery-17",
-    title: "College Trip Highlights",
-    location: "College Trip 2026",
-    imageUrl: "/gallery/gallery-8.jpg",
-    videoUrl: "/gallery/gallery-17.mov",
-    mediaType: "video",
-    aspectRatio: "wide"
-  },
-  {
-    id: "gallery-18",
-    title: "Ooty Gathering",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-18.jpg",
-    aspectRatio: "portrait"
-  },
-  {
-    id: "gallery-19",
-    title: "Ooty Campus Friends",
-    location: "Ooty Trip 2026",
-    imageUrl: "/gallery/gallery-19.jpg",
-    aspectRatio: "square"
   }
 ];
 
