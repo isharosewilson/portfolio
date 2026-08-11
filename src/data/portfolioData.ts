@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
   github: "https://github.com/isharosewilson",
   linkedin: "https://www.linkedin.com/in/isha-rose-wilson-895857351/",
   resumeUrl: "#",
-  avatarUrl: "/avatar.png"
+  avatarUrl: "/avatar.jpg"
 };
 
 export const STATS: Stat[] = [
