@@ -41,10 +41,10 @@ export const Gallery: React.FC = () => {
             Visual Moments
           </span>
           <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7] mt-2">
-            Campus & Community Pins.
+            My Favorite Moments.
           </h2>
           <p className="mt-3 text-base md:text-lg text-[#86868B] dark:text-[#A1A1A6] max-w-lg font-normal">
-            A Pinterest-style collection of college life, events, outings, and memories at GEC Wayanad.
+            A Pinterest-style collection of my favorite moments, college trips, outings, and memories.
           </p>
         </div>
 
