@@ -14,11 +14,15 @@ export function useDarkMode() {
 
   useEffect(() => {
     const root = document.documentElement;
+    const body = document.body;
+
     if (isDark) {
       root.classList.add('dark');
+      body.classList.add('dark');
       localStorage.setItem('apple_portfolio_theme', 'dark');
     } else {
       root.classList.remove('dark');
+      body.classList.remove('dark');
       localStorage.setItem('apple_portfolio_theme', 'light');
     }
   }, [isDark]);

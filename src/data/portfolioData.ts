@@ -43,99 +43,99 @@ export const STATS: Stat[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gallery-1",
-    title: "Campus Days & Outings",
-    location: "GEC Wayanad, Kerala",
+    title: "Ooty Trip Moments",
+    location: "Ooty Trip 2026",
     imageUrl: "/gallery/gallery-1.jpg",
     aspectRatio: "portrait"
   },
   {
     id: "gallery-2",
-    title: "Engineering Moments",
-    location: "GEC Wayanad",
+    title: "Ooty Exploration",
+    location: "Ooty Trip 2026",
     imageUrl: "/gallery/gallery-2.jpg",
     aspectRatio: "square"
   },
   {
     id: "gallery-3",
-    title: "College Life",
-    location: "Wayanad, Kerala",
+    title: "Ooty Campus Friends",
+    location: "Ooty Trip 2026",
     imageUrl: "/gallery/gallery-3.jpg",
     aspectRatio: "portrait"
   },
   {
     id: "gallery-4",
-    title: "Peer Community & Friends",
-    location: "GEC Wayanad",
+    title: "Ooty Scenic View",
+    location: "Ooty Trip 2026",
     imageUrl: "/gallery/gallery-4.jpg",
     aspectRatio: "wide"
   },
   {
     id: "gallery-5",
-    title: "Campus Environment",
-    location: "Wayanad, Kerala",
+    title: "Ooty Outing Snap",
+    location: "Ooty Trip 2026",
     imageUrl: "/gallery/gallery-5.jpg",
     aspectRatio: "square"
   },
   {
     id: "gallery-6",
-    title: "College Events & Celebrations",
-    location: "GEC Wayanad",
+    title: "Ooty Trip Memories",
+    location: "Ooty Trip 2026",
     imageUrl: "/gallery/gallery-6.jpg",
     aspectRatio: "portrait"
   },
   {
     id: "gallery-7",
-    title: "Campus Vibes",
-    location: "Wayanad, Kerala",
+    title: "Ooty Group Gathering",
+    location: "Ooty Trip 2026",
     imageUrl: "/gallery/gallery-7.jpg",
     aspectRatio: "square"
   },
   {
     id: "gallery-8",
-    title: "Outing & Memories",
-    location: "Kerala",
+    title: "College Fest & Trip",
+    location: "College Trip 2026",
     imageUrl: "/gallery/gallery-8.jpg",
     aspectRatio: "portrait"
   },
   {
     id: "gallery-9",
-    title: "Friendship & Community",
-    location: "GEC Wayanad",
+    title: "Campus Celebrations",
+    location: "College Trip 2026",
     imageUrl: "/gallery/gallery-9.jpg",
     aspectRatio: "square"
   },
   {
     id: "gallery-10",
-    title: "Campus Gatherings",
-    location: "Wayanad, Kerala",
+    title: "Friends & Community",
+    location: "College Trip 2026",
     imageUrl: "/gallery/gallery-10.jpg",
     aspectRatio: "portrait"
   },
   {
     id: "gallery-11",
-    title: "Festivals & Celebrations",
-    location: "GEC Wayanad",
+    title: "Campus Memories",
+    location: "College Trip 2026",
     imageUrl: "/gallery/gallery-11.jpg",
     aspectRatio: "wide"
   },
   {
     id: "gallery-12",
-    title: "Group Portrait",
-    location: "Kerala",
+    title: "Class Group Portrait",
+    location: "College Trip 2026",
     imageUrl: "/gallery/gallery-12.jpg",
     aspectRatio: "square"
   },
   {
     id: "gallery-13",
-    title: "Nettara Trip",
-    location: "Kerala",
+    title: "Nettara Trip Exploration",
+    location: "Nettara Trip",
     imageUrl: "/gallery/gallery-13.jpg",
     aspectRatio: "portrait"
   },
   {
     id: "gallery-14",
-    title: "Nettara Moments",
-    location: "Kerala",
+    title: "Nettara Outing Snap",
+    location: "Nettara Trip",
     imageUrl: "/gallery/gallery-14.jpg",
     aspectRatio: "square"
   }
