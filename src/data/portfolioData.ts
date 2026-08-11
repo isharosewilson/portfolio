@@ -13,8 +13,7 @@ export const PERSONAL_INFO = {
   email: "isharosewilson@gmail.com",
   github: "https://github.com/isharosewilson",
   linkedin: "https://www.linkedin.com/in/isha-rose-wilson-895857351/",
-  resumeUrl: "#",
-  avatarUrl: "/avatar.png"
+  resumeUrl: "#"
 };
 
 export const STATS: Stat[] = [

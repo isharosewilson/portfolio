@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, GraduationCap } from 'lucide-react';
+import { MapPin, GraduationCap, Terminal, Cpu } from 'lucide-react';
 import { PERSONAL_INFO, STATS } from '../data/portfolioData';
 
 export const About: React.FC = () => {
@@ -82,7 +82,7 @@ export const About: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Right Column: Ultra-Clean Apple Profile Picture Frame */}
+        {/* Right Column: Ultra-Minimalist Developer Visual Card (No Photos) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -90,24 +90,40 @@ export const About: React.FC = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="lg:col-span-5 relative"
         >
-          <div className="relative group rounded-3xl p-3 bg-white dark:bg-[#161618] border border-black/10 dark:border-white/10 shadow-xl shadow-black/5 dark:shadow-black/40 overflow-hidden">
-            {/* Real Profile Image */}
-            <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5">
-              <img
-                src={PERSONAL_INFO.avatarUrl}
-                alt={PERSONAL_INFO.name}
-                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-              />
-              {/* Subtle glass overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80" />
-              
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <h3 className="text-lg font-semibold tracking-tight">
-                  {PERSONAL_INFO.name}
-                </h3>
-                <p className="text-xs text-white/80 font-medium">
-                  {PERSONAL_INFO.college}
-                </p>
+          <div className="relative group rounded-3xl p-8 bg-white dark:bg-[#161618] border border-black/10 dark:border-white/10 shadow-xl shadow-black/5 dark:shadow-black/40 overflow-hidden flex flex-col justify-between min-h-[380px]">
+            {/* Window Bar Graphic */}
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-rose-500/70" />
+                <div className="w-3 h-3 rounded-full bg-amber-500/70" />
+                <div className="w-3 h-3 rounded-full bg-emerald-500/70" />
+              </div>
+              <span className="text-[11px] font-mono text-[#86868B]">developer.profile</span>
+            </div>
+
+            {/* Middle Initials Badge & Terminal Graphic */}
+            <div className="my-auto flex flex-col items-center text-center">
+              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#1D1D1F] to-gray-800 dark:from-[#F5F5F7] dark:to-gray-300 text-white dark:text-[#1D1D1F] flex items-center justify-center text-3xl font-bold tracking-wider shadow-lg mb-5 group-hover:scale-105 transition-transform duration-300">
+                IRW
+              </div>
+
+              <h3 className="text-xl font-semibold tracking-tight text-[#1D1D1F] dark:text-[#F5F5F7]">
+                {PERSONAL_INFO.name}
+              </h3>
+              <p className="text-xs text-[#86868B] dark:text-[#A1A1A6] font-medium mt-1">
+                B.Tech Computer Science • GEC Wayanad
+              </p>
+            </div>
+
+            {/* Bottom Tech Pills */}
+            <div className="pt-6 border-t border-black/5 dark:border-white/10 flex items-center justify-between text-xs text-[#86868B] dark:text-[#A1A1A6]">
+              <div className="flex items-center gap-1.5">
+                <Terminal className="w-4 h-4 text-[#0071E3] dark:text-[#2997FF]" />
+                <span>React & TypeScript</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <Cpu className="w-4 h-4 text-emerald-500" />
+                <span>Web Dev</span>
               </div>
             </div>
           </div>
