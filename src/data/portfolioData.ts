@@ -75,6 +75,69 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: "Wayanad, Kerala",
     imageUrl: "/gallery/gallery-5.jpg",
     aspectRatio: "square"
+  },
+  {
+    id: "gallery-6",
+    title: "College Events & Celebrations",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-6.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-7",
+    title: "Campus Vibes",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-7.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-8",
+    title: "Outing & Memories",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-8.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-9",
+    title: "Friendship & Community",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-9.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-10",
+    title: "Campus Gatherings",
+    location: "Wayanad, Kerala",
+    imageUrl: "/gallery/gallery-10.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-11",
+    title: "Festivals & Celebrations",
+    location: "GEC Wayanad",
+    imageUrl: "/gallery/gallery-11.jpg",
+    aspectRatio: "wide"
+  },
+  {
+    id: "gallery-12",
+    title: "Group Portrait",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-12.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-13",
+    title: "Nettara Trip",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-13.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-14",
+    title: "Nettara Moments",
+    location: "Kerala",
+    imageUrl: "/gallery/gallery-14.jpg",
+    aspectRatio: "square"
   }
 ];
 
