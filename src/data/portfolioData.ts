@@ -138,6 +138,43 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: "Nettara Trip",
     imageUrl: "/gallery/gallery-14.jpg",
     aspectRatio: "square"
+  },
+  {
+    id: "gallery-15",
+    title: "Nettara Landscape",
+    location: "Nettara Trip",
+    imageUrl: "/gallery/gallery-15.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-16",
+    title: "Nettara Scenic View",
+    location: "Nettara Trip",
+    imageUrl: "/gallery/gallery-16.jpg",
+    aspectRatio: "square"
+  },
+  {
+    id: "gallery-17",
+    title: "College Trip Highlights",
+    location: "College Trip 2026",
+    imageUrl: "/gallery/gallery-8.jpg",
+    videoUrl: "/gallery/gallery-17.mov",
+    mediaType: "video",
+    aspectRatio: "wide"
+  },
+  {
+    id: "gallery-18",
+    title: "Ooty Gathering",
+    location: "Ooty Trip 2026",
+    imageUrl: "/gallery/gallery-18.jpg",
+    aspectRatio: "portrait"
+  },
+  {
+    id: "gallery-19",
+    title: "Ooty Campus Friends",
+    location: "Ooty Trip 2026",
+    imageUrl: "/gallery/gallery-19.jpg",
+    aspectRatio: "square"
   }
 ];
 

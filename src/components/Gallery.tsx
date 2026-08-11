@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, MapPin, ChevronLeft, ChevronRight, Heart, Share2, Download, Eye } from 'lucide-react';
+import { X, MapPin, ChevronLeft, ChevronRight, Heart, Share2, Download, Eye, Play } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data/portfolioData';
 
 export const Gallery: React.FC = () => {
@@ -44,7 +44,7 @@ export const Gallery: React.FC = () => {
             Campus & Community Pins.
           </h2>
           <p className="mt-3 text-base md:text-lg text-[#86868B] dark:text-[#A1A1A6] max-w-lg font-normal">
-            A Pinterest-style collection of college life, events, and memories at GEC Wayanad.
+            A Pinterest-style collection of college life, events, outings, and memories at GEC Wayanad.
           </p>
         </div>
 
@@ -58,6 +58,8 @@ export const Gallery: React.FC = () => {
       <div className="masonry-grid">
         {GALLERY_ITEMS.map((item, index) => {
           const isLiked = !!likedIds[item.id];
+          const isVideo = item.mediaType === 'video';
+
           return (
             <motion.div
               key={item.id}
@@ -68,7 +70,7 @@ export const Gallery: React.FC = () => {
               onClick={() => setActivePhotoIndex(index)}
               className="masonry-item group relative rounded-3xl overflow-hidden cursor-pointer bg-white dark:bg-[#161618] border border-black/5 dark:border-white/10 shadow-sm hover:shadow-xl transition-all duration-300"
             >
-              {/* Image */}
+              {/* Image / Video Media Container */}
               <div className="relative overflow-hidden w-full">
                 <img
                   src={item.imageUrl}
@@ -77,12 +79,19 @@ export const Gallery: React.FC = () => {
                   loading="lazy"
                 />
 
+                {/* Video Play Badge Indicator */}
+                {isVideo && (
+                  <div className="absolute top-3 left-3 p-2 rounded-full bg-black/60 backdrop-blur-md text-white border border-white/20">
+                    <Play className="w-3.5 h-3.5 fill-current" />
+                  </div>
+                )}
+
                 {/* Pinterest Hover Glass Overlay */}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4 backdrop-blur-[2px]">
                   {/* Top Bar: Like / Pin Heart Action */}
                   <div className="flex justify-between items-center">
                     <span className="text-[11px] font-medium tracking-wider text-white/90 uppercase px-2.5 py-1 rounded-full bg-black/40 backdrop-blur-md">
-                      Pin #{index + 1}
+                      {isVideo ? 'Video Pin' : `Pin #${index + 1}`}
                     </span>
 
                     <button
@@ -111,7 +120,7 @@ export const Gallery: React.FC = () => {
                     </div>
 
                     <span className="p-2 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-md text-white shrink-0">
-                      <Eye className="w-4 h-4" />
+                      {isVideo ? <Play className="w-4 h-4 fill-current" /> : <Eye className="w-4 h-4" />}
                     </span>
                   </div>
                 </div>
@@ -151,13 +160,22 @@ export const Gallery: React.FC = () => {
                 <X className="w-5 h-5" />
               </button>
 
-              {/* Photo Area */}
+              {/* Photo / Video Area */}
               <div className="relative w-full md:w-3/5 bg-black flex items-center justify-center min-h-[300px] max-h-[60vh] md:max-h-[85vh]">
-                <img
-                  src={activePhoto.imageUrl}
-                  alt={activePhoto.title}
-                  className="max-h-[60vh] md:max-h-[85vh] w-full object-contain"
-                />
+                {activePhoto.mediaType === 'video' && activePhoto.videoUrl ? (
+                  <video
+                    src={activePhoto.videoUrl}
+                    controls
+                    autoPlay
+                    className="max-h-[60vh] md:max-h-[85vh] w-full object-contain"
+                  />
+                ) : (
+                  <img
+                    src={activePhoto.imageUrl}
+                    alt={activePhoto.title}
+                    className="max-h-[60vh] md:max-h-[85vh] w-full object-contain"
+                  />
+                )}
 
                 {/* Left/Right Nav Buttons */}
                 <button
@@ -180,7 +198,7 @@ export const Gallery: React.FC = () => {
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-xs font-semibold uppercase tracking-wider text-[#0071E3] dark:text-[#2997FF]">
-                      Pinterest Pin Detail
+                      {activePhoto.mediaType === 'video' ? 'Video Pin' : 'Pinterest Pin Detail'}
                     </span>
 
                     <button
@@ -205,21 +223,21 @@ export const Gallery: React.FC = () => {
                   </div>
 
                   <p className="mt-4 text-xs sm:text-sm text-[#86868B] dark:text-[#A1A1A6] leading-relaxed">
-                    Captured during engineering studies and campus life events at Government Engineering College Wayanad, Kerala.
+                    Captured during engineering studies, outings, and campus life events at Government Engineering College Wayanad, Kerala.
                   </p>
                 </div>
 
                 {/* Footer Action Buttons */}
                 <div className="pt-6 border-t border-black/5 dark:border-white/10 flex items-center gap-3 mt-6">
                   <a
-                    href={activePhoto.imageUrl}
+                    href={activePhoto.videoUrl || activePhoto.imageUrl}
                     download
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 px-4 py-2.5 rounded-full bg-[#1D1D1F] dark:bg-[#F5F5F7] text-white dark:text-[#1D1D1F] text-xs font-medium tracking-tight flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
                   >
                     <Download className="w-3.5 h-3.5" />
-                    <span>Full Resolution</span>
+                    <span>Download Media</span>
                   </a>
 
                   <button

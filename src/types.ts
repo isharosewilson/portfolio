@@ -32,5 +32,7 @@ export interface GalleryItem {
   title: string;
   location: string;
   imageUrl: string;
+  videoUrl?: string;
+  mediaType?: 'image' | 'video';
   aspectRatio?: 'square' | 'portrait' | 'wide';
 }
