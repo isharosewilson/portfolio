@@ -2,20 +2,19 @@ import type { Project, Skill, Stat } from '../types';
 
 export const PERSONAL_INFO = {
   name: "Isha Rose Wilson",
-  tagline: "I build clean, useful web experiences.",
-  subheadline: "Engineering student at Government Engineering College Wayanad, based in Kozhikode, Kerala — learning to build and ship real projects with React, TypeScript, and modern web stack.",
+  tagline: "Building clean, useful web experiences.",
+  subheadline: "Engineering student at Government Engineering College Wayanad, based in Kozhikode, Kerala — crafting responsive, high-performance web applications with React, TypeScript, and modern web stack.",
   bio: [
-    "I'm a passionate engineering student at Government Engineering College Wayanad, based in Kozhikode, Kerala, India.",
-    "Driven by curiosity and a commitment to intuitive software, I focus on crafting clean, accessible, and responsive user interfaces. I enjoy transforming complex logic into simple, elegant digital experiences using modern web tools.",
-    "[Add 1–3 more sentences here on what you're currently learning/building, such as full-stack exploration, API integrations, or open-source interests.]"
+    "I'm a computer science engineering student at Government Engineering College Wayanad, based in Kozhikode, Kerala, India.",
+    "Driven by curiosity and a commitment to intuitive software, I focus on crafting clean, accessible, and responsive user interfaces. I enjoy transforming complex logic into simple, elegant digital experiences using modern web tools."
   ],
   college: "Government Engineering College Wayanad",
   location: "Kozhikode, Kerala, India",
-  email: "isharosewilson@gmail.com", // [User: Update with your exact email address]
+  email: "isharosewilson@gmail.com",
   github: "https://github.com/isharosewilson",
   linkedin: "https://www.linkedin.com/in/isha-rose-wilson-895857351/",
-  resumeUrl: "#", // [User: Replace with your actual resume PDF link or Google Drive link]
-  avatarPlaceholderText: "[Your Photo Here — Replace image URL in portfolioData.ts]",
+  resumeUrl: "#",
+  avatarUrl: "/avatar.png"
 };
 
 export const STATS: Stat[] = [
@@ -26,7 +25,7 @@ export const STATS: Stat[] = [
   },
   {
     label: "Education",
-    value: "B.Tech",
+    value: "B.Tech CSE",
     sublabel: "GEC Wayanad"
   },
   {
@@ -37,7 +36,7 @@ export const STATS: Stat[] = [
   {
     label: "Stack",
     value: "React & TS",
-    sublabel: "Modern Web Tech"
+    sublabel: "Modern Web Stack"
   }
 ];
 
@@ -116,7 +115,7 @@ export const PROJECTS: Project[] = [
       "Fully responsive viewport scaling across mobile and desktop"
     ],
     featured: true,
-    colorGradient: "from-blue-500/20 to-cyan-500/20"
+    colorGradient: "from-gray-500/10 to-slate-500/10"
   },
   {
     id: "calculator",
@@ -133,7 +132,7 @@ export const PROJECTS: Project[] = [
       "Keyboard shortcut bindings for quick calculation workflow"
     ],
     featured: true,
-    colorGradient: "from-purple-500/20 to-indigo-500/20"
+    colorGradient: "from-blue-500/10 to-slate-500/10"
   },
   {
     id: "fortune-tours",
@@ -150,7 +149,7 @@ export const PROJECTS: Project[] = [
       "Clean call-to-action sections for user inquiry submissions"
     ],
     featured: true,
-    colorGradient: "from-emerald-500/20 to-teal-500/20"
+    colorGradient: "from-emerald-500/10 to-teal-500/10"
   },
   {
     id: "vibe-coding",
@@ -167,6 +166,6 @@ export const PROJECTS: Project[] = [
       "Clean code practices and modern ES syntax"
     ],
     featured: true,
-    colorGradient: "from-amber-500/20 to-orange-500/20"
+    colorGradient: "from-sky-500/10 to-blue-500/10"
   }
 ];

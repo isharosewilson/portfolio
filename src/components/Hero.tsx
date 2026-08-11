@@ -17,9 +17,8 @@ export const Hero: React.FC = () => {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-12 pt-28 pb-16 overflow-hidden select-none"
     >
-      {/* Subtle Ambient Apple-Style Background Glow Blobs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-[#0071E3]/15 via-purple-500/10 to-indigo-500/10 dark:from-[#2997FF]/15 dark:via-purple-500/15 dark:to-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse duration-10000" />
-      <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] bg-gradient-to-bl from-blue-400/10 to-teal-400/10 dark:from-blue-600/10 dark:to-emerald-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      {/* Ultra-Minimalist Soft Subtle Ambient Background */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-b from-[#0071E3]/5 to-transparent dark:from-[#2997FF]/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
         {/* Status / Location Badge */}
@@ -27,7 +26,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/[0.03] dark:bg-white/[0.06] border border-black/5 dark:border-white/10 text-xs md:text-sm font-medium text-[#86868B] dark:text-[#A1A1A6] mb-8 shadow-xs"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/[0.03] dark:bg-white/[0.05] border border-black/5 dark:border-white/10 text-xs md:text-sm font-medium text-[#86868B] dark:text-[#A1A1A6] mb-8"
         >
           <Sparkles className="w-3.5 h-3.5 text-[#0071E3] dark:text-[#2997FF]" />
           <span>GEC Wayanad • Kozhikode, Kerala</span>
@@ -43,12 +42,12 @@ export const Hero: React.FC = () => {
           {PERSONAL_INFO.name}
         </motion.h1>
 
-        {/* Animated Tagline */}
+        {/* Minimalist Tagline */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-4 text-xl sm:text-2xl md:text-3xl font-medium tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#0071E3] via-indigo-600 to-[#1D1D1F] dark:from-[#2997FF] dark:via-indigo-400 dark:to-[#F5F5F7]"
+          className="mt-4 text-xl sm:text-2xl md:text-3xl font-medium tracking-tight text-[#0071E3] dark:text-[#2997FF]"
         >
           {PERSONAL_INFO.tagline}
         </motion.p>
@@ -72,11 +71,11 @@ export const Hero: React.FC = () => {
         >
           {/* Apple Pill Primary CTA */}
           <motion.a
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             href="#projects"
             onClick={(e) => handleScrollTo(e, '#projects')}
-            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#0071E3] hover:bg-[#0077ED] dark:bg-[#0071E3] dark:hover:bg-[#2997FF] text-white font-medium text-base tracking-tight shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group"
+            className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#1D1D1F] hover:bg-black dark:bg-[#F5F5F7] dark:hover:bg-white text-white dark:text-[#1D1D1F] font-medium text-base tracking-tight shadow-sm transition-all duration-200 flex items-center justify-center gap-2 group"
           >
             <span>View Projects</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -105,12 +104,12 @@ export const Hero: React.FC = () => {
           if (target) target.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        <span className="text-xs uppercase tracking-widest font-medium opacity-60">Scroll</span>
+        <span className="text-[11px] uppercase tracking-widest font-medium opacity-60">Scroll</span>
         <motion.div
-          animate={{ y: [0, 5, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
+          animate={{ y: [0, 4, 0] }}
+          transition={{ repeat: Infinity, duration: 1.6, ease: 'easeInOut' }}
         >
-          <ChevronDown className="w-4 h-4 opacity-70" />
+          <ChevronDown className="w-4 h-4 opacity-60" />
         </motion.div>
       </motion.div>
     </section>
